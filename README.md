@@ -1,6 +1,6 @@
-# SpellEffect
+# SpellEffect 1.9
 
-SpellEffect est un outil écris en C# qui nécessite l'environnement de développement Framework 4.0
+SpellEffect est un outil écris en C# qui nécessite l'environnement de développement Framework 4.5
 
 L'outil permet d'explorer la table Spells_Levels qui contient les paramètres des sorts comme le nombre de PA à utiliser, si une ligne de vue est nécessaire, la classe propriétaire du sort ...
 
