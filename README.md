@@ -1,5 +1,7 @@
 # SpellEffect 1.10
 
+<img src="SpellEffect/Resources/159.ico" width = "600">
+
 SpellEffect est un outil écris en C# qui nécessite l'environnement de développement Framework 4.5
 
 L'outil permet d'explorer la table Spells_Levels qui contient les paramètres des sorts comme le nombre de PA à utiliser, si une ligne de vue est nécessaire, la classe propriétaire du sort ...
@@ -20,5 +22,7 @@ https://github.com/melharfi/SpellEffect/wiki
 
 Don paypal : m.elharfi@gmail.com
 
-<img src="SpellEffect/Resources/howToIopWrath.gif" width = "400">
+<img src="SpellEffect/Resources/howToIopWrath.gif" width = "600">
+<img src="SpellEffect/Resources/howToCopyDebugedRawData.gif" width = "600">
+<img src="SpellEffect/Resources/howToAddClientVersion.gif" width = "600">
 
