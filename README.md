@@ -1,6 +1,6 @@
 # SpellEffect 1.10
 
-<img src="SpellEffect/Resources/159.ico" width = "600">
+<img src="SpellEffect/Resources/159.ico" width = "300">
 
 SpellEffect est un outil écris en C# qui nécessite l'environnement de développement Framework 4.5
 
