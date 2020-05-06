@@ -1,4 +1,4 @@
-# SpellEffect 1.9
+# SpellEffect 1.10
 
 SpellEffect est un outil écris en C# qui nécessite l'environnement de développement Framework 4.5
 
