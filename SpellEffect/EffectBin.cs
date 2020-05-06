@@ -44,7 +44,7 @@ namespace SpellEffect
         {
             int num = 0;
             effectDataList.Clear();
-            while (num + 1 < buffer.Length)
+            while (buffer != null && num + 1 < buffer.Length)
                 effectDataList.Add(DeserializeEffect(ref num));
 
             AddTabControl();
@@ -53,16 +53,17 @@ namespace SpellEffect
         public void AddTabControl()
         {
             ParamsValuePanel.Controls.RemoveByKey("EffectTabControl");
+
+            TabControl tabControl = new TabControl();
+            tabControl.Location = new Point(13, 11);
+            tabControl.Name = "EffectTabControl";
+            tabControl.SelectedIndex = 0;
+            tabControl.Size = new Size(523, 298);
+            tabControl.TabIndex = 0;
+            tabControl.SuspendLayout();
+
             if (effectDataList.Count > 0)
             {
-                TabControl tabControl = new TabControl();
-                tabControl.Location = new Point(13, 11);
-                tabControl.Name = "EffectTabControl";
-                tabControl.SelectedIndex = 0;
-                tabControl.Size = new Size(523, 298);
-                tabControl.TabIndex = 0;
-                tabControl.SuspendLayout();
-
                 for (int cnt = 0; cnt < effectDataList.Count; cnt++)
                 {
                     // 
@@ -497,28 +498,28 @@ namespace SpellEffect
 
                     tabControl.Controls.Add(tabPage1);
                 }
-
-                TabPage AddNewEffectPage = new TabPage();
-                AddNewEffectPage.Location = new Point(4, 22);
-                AddNewEffectPage.Name = "EffectPage" + effectDataList.Count;
-                AddNewEffectPage.Padding = new Padding(3);
-                AddNewEffectPage.Size = new Size(515, 272);
-                AddNewEffectPage.TabIndex = effectDataList.Count;
-                AddNewEffectPage.Text = "Add New Effect";
-                AddNewEffectPage.UseVisualStyleBackColor = true;
-
-                Button AddNewEffectBtn = new Button();
-                AddNewEffectBtn.Size = new Size(200, 70);
-                AddNewEffectBtn.Location = new Point((AddNewEffectPage.Size.Width / 2) - 100, (AddNewEffectPage.Size.Height / 2) - 35);
-                AddNewEffectBtn.Name = "AddNewEffecrBtn";
-                AddNewEffectBtn.TabIndex = effectDataList.Count + 1;
-                AddNewEffectBtn.Text = "Add New Effect";
-                AddNewEffectBtn.Click += AddNewEffectBtn_Click;
-                AddNewEffectPage.Controls.Add(AddNewEffectBtn);
-
-                tabControl.Controls.Add(AddNewEffectPage);
-                ParamsValuePanel.Controls.Add(tabControl);
             }
+
+            TabPage AddNewEffectPage = new TabPage();
+            AddNewEffectPage.Location = new Point(4, 22);
+            AddNewEffectPage.Name = "EffectPage" + effectDataList.Count;
+            AddNewEffectPage.Padding = new Padding(3);
+            AddNewEffectPage.Size = new Size(515, 272);
+            AddNewEffectPage.TabIndex = effectDataList.Count;
+            AddNewEffectPage.Text = "Add New Effect";
+            AddNewEffectPage.UseVisualStyleBackColor = true;
+
+            Button AddNewEffectBtn = new Button();
+            AddNewEffectBtn.Size = new Size(200, 70);
+            AddNewEffectBtn.Location = new Point((AddNewEffectPage.Size.Width / 2) - 100, (AddNewEffectPage.Size.Height / 2) - 35);
+            AddNewEffectBtn.Name = "AddNewEffecrBtn";
+            AddNewEffectBtn.TabIndex = effectDataList.Count + 1;
+            AddNewEffectBtn.Text = "Add New Effect";
+            AddNewEffectBtn.Click += AddNewEffectBtn_Click;
+            AddNewEffectPage.Controls.Add(AddNewEffectBtn);
+
+            tabControl.Controls.Add(AddNewEffectPage);
+            ParamsValuePanel.Controls.Add(tabControl);
         }
 
         private void LeftArrow_MouseLeave(object sender, EventArgs e)
@@ -607,7 +608,7 @@ namespace SpellEffect
             effectData.full_buffer = null;
             effectData.hidden = false;
             effectData.id = (int)EffectsEnum.Effect_DamageEarth;
-            effectData.Id_row = effectDataList[0].Id_row;
+            effectData.Id_row = (effectDataList.Count() == 0) ? 0 : effectDataList[0].Id_row;
             effectData.index = EffectTabControl.TabPages.Count - 1;
             effectData.modificator = 0;
             effectData.random = 0;

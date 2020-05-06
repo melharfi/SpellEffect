@@ -14,7 +14,7 @@ namespace SpellEffect
         Effect_Divorce,
         Effect_SwitchPosition,
         Effect_Dodge,
-        Effect_10,
+        Effect_PullForwardWhenHitted,           // attirance vers l'adversaire quand le joueur subit des dommages sort Friction de Iop, old effect//Effect_10,, EffetID 6 affiche le buff sur le personnage
         Effect_13 = 13,
         Effect_34 = 34,
         Effect_50 = 50,
@@ -320,7 +320,7 @@ namespace SpellEffect
         Effect_790,
         Effect_791,
         Effect_792,
-        Effect_Rewind,
+        Effect_Poutch,              // handle du sort poutch de iop
         Effect_795 = 795,
         Effect_800 = 800,
         Effect_805 = 805,
@@ -507,12 +507,11 @@ namespace SpellEffect
         Effect_DamageEarthPerMP,
         Effect_1141,
         Effect_1142,
-        Effect_DamagePercentAirOfErodedHP,
-        Effect_DamagePercentWaterOfErodedHP,
-        Effect_DamagePercentEarthOfErodedHP,
-        Effect_DamagePercentFireOfErodedHP,
-        Effect_DamagePercentNeutralOfErodedHP,
-        Effect_Poutch,
+        Effect_DamagePercentAirOfErodedHP,      // pour le sort duel qui inflige des dégat en pourcentage des points de vie érodé, (soustraire les résistances fix élémentaires et en pourcentage)
+        Effect_DamagePercentWaterOfErodedHP,    // pour le sort duel qui inflige des dégat en pourcentage des points de vie érodé, (soustraire les résistances fix élémentaires et en pourcentage)
+        Effect_DamagePercentEarthOfErodedHP,    // pour le sort duel qui inflige des dégat en pourcentage des points de vie érodé, (soustraire les résistances fix élémentaires et en pourcentage)
+        Effect_DamagePercentFireOfErodedHP,     // pour le sort duel qui inflige des dégat en pourcentage des points de vie érodé, (soustraire les résistances fix élémentaires et en pourcentage)
+        Effect_DamagePercentNeutralOfErodedHP,  // pour le sort duel qui inflige des dégat en pourcentage des points de vie érodé, (soustraire les résistances fix élémentaires et en pourcentage)
         End
     }
 }

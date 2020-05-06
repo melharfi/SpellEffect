@@ -146,7 +146,7 @@ namespace SpellEffect
         private void DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             object value = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
-            if(value.GetType() == typeof(Byte[]) && (columnName[e.ColumnIndex] == "EffectsBin" || columnName[e.ColumnIndex] == "CriticalEffectsBin" || columnName[e.ColumnIndex] == "Effects" || columnName[e.ColumnIndex] == "CriticalEffect" || columnName[e.ColumnIndex] == "CriticalEffects" || columnName[e.ColumnIndex] == "Effect"))
+            if(/*value.GetType() == typeof(Byte[]) && */(columnName[e.ColumnIndex] == "EffectsBin" || columnName[e.ColumnIndex] == "CriticalEffectsBin" || columnName[e.ColumnIndex] == "Effects" || columnName[e.ColumnIndex] == "CriticalEffect" || columnName[e.ColumnIndex] == "CriticalEffects" || columnName[e.ColumnIndex] == "Effect"))
             {
                 this.Hide();
                 EffectBin effectBin = new EffectBin(value as Byte[], mysqlCon, Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()), columnName[e.ColumnIndex]);

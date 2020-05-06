@@ -138,7 +138,7 @@
             this.DB.Name = "DB";
             this.DB.Size = new System.Drawing.Size(100, 20);
             this.DB.TabIndex = 7;
-            this.DB.Text = "world";
+            this.DB.Text = "elyn_world";
             // 
             // Password
             // 
@@ -213,7 +213,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Dofus SpellEffect 1.9";
+            this.Text = "Dofus SpellEffect 1.10";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

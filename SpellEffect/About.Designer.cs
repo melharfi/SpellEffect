@@ -59,10 +59,10 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(12, 76);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(244, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(239, 13);
             this.linkLabel1.TabIndex = 2;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "https://www.github.com/the-morpher/SpellEffects";
+            this.linkLabel1.Text = "https://www.github.com/the-morpher/SpellEffect";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
@@ -79,9 +79,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "SpellEffect 1.9";
+            this.label4.Text = "SpellEffect 1.10";
             // 
             // About
             // 
