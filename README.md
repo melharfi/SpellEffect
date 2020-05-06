@@ -20,4 +20,5 @@ https://github.com/melharfi/SpellEffect/wiki
 
 Don paypal : m.elharfi@gmail.com
 
-SpellEffect/SpellEffect/Resources/
+<img src="SpellEffect/SpellEffect/Resources/howToIopWrath.gif" width = "400">
+
