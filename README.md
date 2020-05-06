@@ -19,3 +19,5 @@ pour un autre bref descriptif de l'utilisation, merci de voir la partie wiki :
 https://github.com/melharfi/SpellEffect/wiki
 
 Don paypal : m.elharfi@gmail.com
+
+SpellEffect/SpellEffect/Resources/
