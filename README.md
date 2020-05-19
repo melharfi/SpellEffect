@@ -1,6 +1,6 @@
 # SpellEffect 1.10
 
-<img src="SpellEffect/Resources/159.ico" width = "150">
+<img src="SpellEffect/Resources/159.ico" width = "110">
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/melharfi/MELHARFI-2D-Game-Engine/blob/master/LICENSE)
 
