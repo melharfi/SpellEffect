@@ -2,7 +2,8 @@
 
 <img src="SpellEffect/Resources/159.ico" width = "110">
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/melharfi/MELHARFI-2D-Game-Engine/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/melharfi/SpellEffect/blob/master/LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/melharfi/SpellEffect)](https://github.com/melharfi/SpellEffect/releases) 
 
 SpellEffect est un outil écris en C# qui nécessite l'environnement de développement Framework 4.5
 
